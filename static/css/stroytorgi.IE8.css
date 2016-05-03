@@ -1,0 +1,20 @@
+.footer-nav_col {width:22.3%;}
+.switch_item {border: 2px solid #d8dee3;}
+.clients-section .switch_item {width:28%;}
+.reviews-list_col {width:45.61%}
+.error-col {max-width: 48.15%}
+.btn-loading.btn-loading__red {background: #af003a url('../img/loading-strings__red.GIF') 0 center no-repeat;background-size: 100%;}
+.btn-loading.btn-loading__grey {background: #7e8793 url('../img/loading-strings__grey.GIF') center center no-repeat;background-size:100% 100%;}
+.partners_item {width: 22.7%;}
+.reviews-list {padding-bottom: 30px; margin-bottom: -1px;}
+.clients-section :first-child.switch_item {width: 35.4%}
+INPUT.input-text {padding: 10px;}
+.chart-canvas__bubble,
+.chart-canvas__donut,
+.statistics_charts__bar,
+.statistics_charts__donut,
+.statistics_charts__bubble,
+.home-indicators_wrapper,
+.chart-legend {display: none !important;}
+
+.error-browser_ie8 {display: block !important; padding: 30px 10px; font-size: 16px;font-family: "PlumbRegular"}

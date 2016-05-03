@@ -1,0 +1,28 @@
+.auction-section {
+	.filter {padding-bottom: 21px;}
+	.table-auction {padding: 45px 0 112px;}
+	.switch {width: percentage(300px/$full_width);margin-right: percentage(25px/$full_width);min-width: 250px;}
+	.switch_item { width: 33.333%;}
+	.layout__loading:after {top: 3px;}
+}
+
+.auction-section__loading {
+	.l-restrictor{position: relative;
+		&:after {content:"";position: absolute;top: 3px;width: 100%; left: 0;bottom: 0;background: rgba(255,255,255,0.8) url("../img/icon-loading.GIF") center 200px no-repeat;}
+	}
+}
+
+.table-auction__loading {
+		&:after {content:"";width: 100%; height: 100px; display:block;background: rgba(255,255,255,0.8) url("../img/icon-loading.GIF") center center no-repeat;}
+}
+
+@media only screen and(max-width:$desktop_width){
+	.auction-section {
+		.filter-companies {width: 100%; margin-right: 0;min-width: initial;}
+	}
+}
+
+
+.auction-section .feedback-participate {
+	padding-bottom: 100px;
+}

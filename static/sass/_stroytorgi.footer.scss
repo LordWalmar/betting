@@ -1,0 +1,44 @@
+.l-footer {background-color:$footer-top_color;color:#fff;
+	a {color:#fff;
+		&:hover {border-bottom:1px solid rgba(255,255,255,.5);color:#fff !important;}}}
+.footer-nav {padding-top:28px;}
+.footer-nav_col {box-sizing:border-box;display:inline-block;margin-bottom:40px;vertical-align:top;width:$width_col_3;margin-right:$module_gap;
+	&:last-child {margin-right:0;}}
+.footer-nav_tel {font-family:PlumbRegular !important;}
+.footer-nav_title {border-bottom:2px solid #A1AEB7;color:#fff;font-family:PlumbRegular;font-size:22px;line-height:50px;margin-bottom:22px;text-transform:uppercase;}
+.footer-nav_item {line-height:25px; 
+	a {font-family:PlumbMedium;text-decoration:none;}}
+.footer-nav_item__map {margin-left:3px;margin-top:25px;
+	&:before {content:'';background:url('../img/map-label.png.svg')no-repeat left top;display:inline-block;margin-right:1px;min-height:25px;min-width:20px;vertical-align:middle;}}
+.footer-siteinfo {background-color:$footer-bottom_color;font-size:14px;line-height:20px;padding-bottom:20px;padding-top:11px;}
+.footer-siteinfo_law {display: none;border-bottom: 1px dashed;}
+.footer-siteinfo_item__active{
+	.footer-siteinfo_law {color: $red_color;}
+	.footer-siteinfo_info {max-height: 400px;}}
+.footer-siteinfo_item {display:inline-block;position:relative;vertical-align:top;
+	a {text-decoration: none;}}
+.footer-siteinfo_item__phone,
+.footer-siteinfo_item__developer {margin-right:$module_gap;width:$width_col_3;}
+.footer-siteinfo_item__developer {&:after {content:'';background:url('../img/right-arrow.png.svg')no-repeat left top;display:inline-block;margin-left:7px;min-height:15px;min-width:10px;vertical-align:middle;}}
+.footer-siteinfo_item__phone {line-height:20px;margin-bottom:60px;}
+.footer-siteinfo_item__content,
+.footer-siteinfo_item__copy {height:100%;width:$width_col_9;}
+.footer-siteinfo_item__content {margin-bottom: 10px;}
+.footer-siteinfo_wbtech {font-family:PlumbMedium;}
+
+
+
+@media only screen and (max-width:$desktop_width){
+	.footer-nav_col {width:48%;}
+	.footer-siteinfo_item__phone,
+	.footer-siteinfo_item__developer {width:25%;margin-right: 5%;}
+	.footer-siteinfo_item__content,
+	.footer-siteinfo_item__copy {width:70%;}}
+@media only screen and(max-width:$mobile_width){
+	.footer-nav_col {width:100%;}
+	.footer-siteinfo_item__phone,
+	.footer-siteinfo_item__developer,
+	.footer-siteinfo_item__content,
+	.footer-siteinfo_item__copy{margin-bottom:20px;margin-right:0;width:100%;}
+	.footer-siteinfo_law {display: inline-block;}
+	.footer-siteinfo_info {overflow: hidden;max-height: 0;transition: max-height 200ms ease;}}

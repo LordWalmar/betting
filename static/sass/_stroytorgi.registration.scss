@@ -1,0 +1,13 @@
+.registration-section {
+	.btn-submit {width:100%;}
+}
+.registration {max-width:380px;margin:0 auto;padding:20px 0 180px;font-size:14px;line-height:20px;}
+.registrarion_title {font: 22px "PlumbMedium"; color:$headerBlack_color;margin-top: 40px;}
+.registrarion_tooltip {line-height: 20px;margin-top: 20px;}
+.registration-info_title {color: $lightGrey_color; font: 16px "PlumbMedium";border-bottom: 5px solid $greyLine_color;padding-bottom: 5px;margin-top: 10px;}
+.registration-info_choise {margin-top: 19px;line-height: 20px;display: block;
+	&:last-child {margin-bottom:35px;}}
+.registrarion_point {margin-top: 10px;}
+.registration-info_contact {margin-bottom: 31px;}
+.registration-info_fields {padding: 2px 0 0;
+	.registration-info_choise {display: inline-block;width: 50%;vertical-align: top;}}

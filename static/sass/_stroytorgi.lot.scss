@@ -1,0 +1,61 @@
+/*Constants*/
+$goods_width: 780px;
+
+.lot-section {
+	.feedback-participate {padding-bottom: 100px;}}
+.lot-back {padding:41px 0 25px;}
+.lot-title {font: 36px "PlumbLight";text-transform: uppercase;color: $red_color;padding-bottom: 5px;}
+.lot-info {margin-bottom: 43px;}
+.lot-info_item {display: inline-block;vertical-align: top; border-top: 5px solid #C9D6DB;}
+.lot-info_item__data {width:$width_col_4;margin-right:$module_gap;background: #F5F6F7;}
+.lot-info_item__goods {width:$width_col_8;}
+
+/*Table lot-data*/
+.lot-data_cell {display:inline-block;font-family:"PlumbRegular";vertical-align: top;word-break: break-word;}
+.lot-data_cell {width: 51%;margin:0;padding:5px 0;line-height: 25px;padding-right: 1.5%;
+	&:nth-child(2n+1) {width: 44%;padding-right: 2%;padding-left: 1.5%}}
+.lot-data_cell__header {color:$lightGrey_color;font-family:"PlumbMedium";}
+.lot-data_group{border-bottom: 1px solid $greyBorder_color; border-top: 1px solid #fff;
+	&:first-child {border-top:none;}}
+.lot-data_action {display:inline-block;font-family:"PlumbMedium";vertical-align:top;width:75px;margin-bottom: 6px;}
+.lot-category {display: inline-block;vertical-align: top;font:14px "PlumbRegular";}
+.lot-category_item{display: inline-block;vertical-align: top;}
+
+/*Table lot-goods*/
+
+.lot-goods_row {line-height: 25px;padding: 5px 0;border-bottom: 1px solid $greyLine_color;border-top: 1px solid #fff;
+	&:first-child {border-top:none;}}
+.lot-goods_row__headers {color:$lightGrey_color !important;background: #fff !important;font-family:"PlumbMedium";}
+.lot-goods_group {display: inline-block;vertical-align: top;}
+.lot-goods_cell {display:inline-block;vertical-align:top;word-break:break-word;}
+.lot-goods_group__position {width:percentage(408px/$goods_width);}
+.lot-goods_group__price {width:percentage(125px/$goods_width);margin-right:percentage(87px/$goods_width); }
+.lot-goods_group__amount {width:percentage(160px/$goods_width);}
+.lot-goods_group__numeric {text-align: right;}
+.lot-goods_cell__header {display: none;color:$lightGrey_color;}
+
+@media only screen and(max-width:$desktop_width){
+	.lot-info_item {margin: 0;width: 100%;}
+	.lot-goods_group {border-bottom: 1px solid #BECCD3;width: 100%;
+			&:last-child{border:none;}}
+	.lot-goods_row__headers {display: none;}
+	.lot-goods_cell__header {display: inline-block;}
+	.lot-goods_cell {width: 52%;margin:0;padding:5px 0;line-height: 25px;padding-right: 1%;
+		&:nth-child(2n+1) {width: 44%;padding-right: 2%;padding-left: 1%}}
+	.lot-goods_group__numeric {text-align: left;}
+}
+
+.lot-introducing {font-family: "PlumbRegular";position: relative;
+	&:before {content:"";position: absolute;background: url("../img/pointer_menu.png.svg") left center no-repeat;height: 12px;width: 37px;left: -57px;top: 6px;}
+}
+.lot-info_amount {margin-top: 5px;text-transform: uppercase;text-align:right;width:percentage(533px/$goods_width);display: inline-block;vertical-align: top;margin-bottom: 99px;color:$lightGrey_color;
+	&:before {content: '';background: url("../img/right-arrow.png.svg") no-repeat center center;display: inline-block;margin-right: 5px;min-height: 15px;min-width: 10px;vertical-align: baseline;}
+}
+.lot-info_total {color: $headerBlack_color;}
+@media only screen and(max-width:870px){
+	.lot-info_amount {width: 53%;margin-left: 47%;text-align: left;}
+}
+
+@media only screen and(max-width:$desktop_width){ 
+	.lot-introducing:before {display: none;}
+}

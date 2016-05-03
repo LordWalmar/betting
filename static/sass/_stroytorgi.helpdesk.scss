@@ -1,0 +1,58 @@
+.helpdesk-section .l-restrictor {background:#fff;border-bottom:1px solid #d8dee3;box-shadow:0 3px 0px rgba(225, 225, 225, 0.2);position:relative;z-index:1;}
+.helpdesk-inside {position:relative;}
+.helpdesk-breadcrumbs {padding: 41px 0 21px;}
+.helpdesk-breadcrumbs_return {padding:6px 17px;}
+.helpdesk-breadcrumbs_step {font-size:14px;line-height:20px;
+	&:before {content: '';background:url("../img/right-arrow.png.svg") no-repeat left top;background-size:contain;display:inline-block;margin-left:12px;min-height:14px;min-width:19px;vertical-align:middle;}
+	&:last-child {cursor:default;color:#414141 !important;}}
+
+.helpdesk-list {border-top:5px solid $greyLine_color;margin-top:11px;}
+.helpdesk-list__themes {padding-bottom:187px;}
+.helpdesk-list_row {background:#f9f9fa;border-bottom:1px solid $greyLine_color;border-top:1px solid #fff;padding:6px 0 9px;
+	&:first-child {background:#fff;line-height:35px;margin-bottom:-4px;border-top:none;padding-bottom:0;}}
+.helpdesk_title {font: 22px "PlumbMedium";margin-top:5px;padding-bottom: 4px;}
+.helpdesk_show {margin-top:7px;display: inline-block;}
+.helpdesk-categories {padding:54px 0 100px;}
+.helpdesk-categories_item {margin-bottom:48px;}
+.helpdesk-list_item__header {color:$lightGrey_color;font-weight:bold;padding-left:0 !important;}
+.helpdesk-list_item {box-sizing:border-box;display:inline-block;vertical-align:top;
+	&:first-child {max-width:$width_col_9;margin-right:$module_gap;padding-left:11px;padding-right:12%;width:$width_col_9;}
+	&:last-child {max-width:$width_col_3;width:$width_col_3;padding-right:11px;}}
+.helpdesk-list_question {display:inline-block;font-size:14px;line-height:20px;max-width:90%;color:$textBlack_color;text-decoration:none;}
+.helpdesk-list_date {color:$lightGrey_color;display:inline-block;font-size:14px;padding-left:1px;margin-top:8px;}
+.helpdesk-section {
+	.filter-companies.switch {float:none;}
+	.filter {position: relative;}
+	.filter-companies {display: block;}
+	.switch_element { padding: 5px 17px 6px;}
+	.filter-search { width: percentage(700px/$full_width); margin-right: $module_gap;}
+	.btn-submit {display: inline-block;margin-bottom: 10px; position: absolute; right: 0; top: 59px;}}
+.helpdesk_tooltip {position: absolute;top: 142px;right: 67px;font-size: 14px;color:$lightGrey_color;margin-bottom: 20px;
+	&:after {content:"";background: url("../img/icon-helpdesk.png.svg") no-repeat center center; width: 30px;height: 45px;bottom: 10px;right: -35px;position: absolute;}}
+
+.helpdesk-themes {position:absolute;top:115px;right:3.2%;max-width:30%;vertical-align:top;} 
+.helpdesk-themes_title {margin-top:28px;margin-bottom:5px;text-transform:uppercase;}
+.helpdesk-themes_tag {margin-bottom:2px;background:#f8f8f9;border:1px solid #e4e4e4;border-radius:4px;display:inline-block;line-height:23px;padding:0 8px;
+	&:hover,
+	&:focus {border-color:#c1c1c1;}
+	a {color:#eb2446;font-size:14px;font-family:PlumbRegular;text-decoration:none;}}
+
+
+.helpdesk-nav {margin:60px auto 0;max-width:1000px;padding-bottom:60px;}
+
+@media only screen and (max-width:920px) {
+	.helpdesk_tooltip {right: 50px;}}
+@media only screen and (max-width:$desktop_width) {
+	.helpdesk-section {
+		.switch_item a { padding: 5px 10px 6px;}
+		.btn-submit {position: static;}
+		.helpdesk_tooltip {position: static;
+			&:after {display: none;}}
+		.filter-search {width: 100%;}}
+	.helpdesk-list_item:first-child {padding-right: 0;}
+	.helpdesk-list_question {max-width: 95%;}
+	.help-answer_text {padding-right:10px !important;}}
+@media only screen and(max-width:$mobile_width){
+	.helpdesk-breadcrumbs_step:last-child {display:inline-block;vertical-align:top;margin-left:20px;max-width:49%;
+		&:before {position:absolute;margin-left:-15px;margin-top:4px;}}
+}

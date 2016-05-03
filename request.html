@@ -1,0 +1,68 @@
+<!-- jQuery File Upload Dependencies -->
+<script src="static/js/upload/jquery.ui.widget.js"></script>
+<script src="static/js/upload/jquery.iframe-transport.js"></script>
+<script src="static/js/upload/jquery.fileupload.js"></script>
+<script src="static/js/upload/uploaderScript.js"></script>
+<script src="static/js/stroytorgi.validation.js"></script>
+<section id="request_helpdesk" class="l-section form-section">
+<div class="l-restrictor">
+<div class="form">
+    <div class="form_logo">
+        <a href="index.php">
+            <img src="static/img/logo-stroytorgi.png.svg" alt="stroytorgi" />
+        </a>
+    </div>
+    <div class="form_wrapper">
+        <div class="form_container">
+            <form id="form_request" method="post" action="#" enctype="multipart/form-data">
+                <div class="other_errors" style="display: none"></div>
+                <label>
+                    <span class="form_point">Ф.И.О.</span>
+                    <input name="author" maxlength="255" class="input-text" type="text">
+                </label>
+                <label>
+                    <span class="form_point">Email</span>
+                    <input name="email" maxlength="255" class="input-text" type="text">
+                </label>
+                <label>
+                    <span class="form_point">Тип обращения</span>
+                    <select class="input-select" name="type">
+                        <option value="default">&mdash;</option>
+                    </select>
+                </label>
+                <label>
+                    <span class="form_point">Категория обращения</span>
+                    <select class="input-select" name="category_id">
+                        <option value="default">&mdash;</option>
+                    </select>
+                </label>
+                <label>
+                    <span class="form_point">Тема</span>
+                    <input name="title" maxlength="255" class="input-text" type="text">
+                </label>
+                <label>
+                    <span class="form_point">Сообщение</span>
+                    <textarea name="text" maxlength="3000" class="input-text"></textarea>
+                </label>
+                <div id="upload" class="input-text form-upload">
+                    <ul>
+                        <!-- The file uploads will be shown here -->
+                    </ul>
+                    <p id="drop">Перетащите файл сюда или <a class="stroytorgi_link">выберите</a>
+                        <input type="file" name="file" />
+                    </p>
+                </div>
+                <input type="submit" value="Отправить" class="btn-submit btn-submit__grey">
+            </form>
+	    </div>
+        <div class="thnx" style="display: none">
+            <div class="form_container">
+                <div class="section_title">Cпасибо</div>
+                <div class="form_title">Ваш запрос принят. Мы&nbsp;ответим Вам в&nbsp;течении 12 часов.</div>
+            </div>
+        <div>
+    </div>
+</div>
+</div>
+<a href="" class="window-modal_close btn-step form-btn-modal_close">Закрыть</a>
+</section>

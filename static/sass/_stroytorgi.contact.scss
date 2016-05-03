@@ -1,0 +1,31 @@
+.contact-section {background:#F5F6F7;
+.l-restrictor {background: #fff;}
+}
+.contact-adress {padding: 19px 0 15px;}
+.contact-adress_title {font:14px "PlumbLight";color: $gold_color; line-height: 20px;text-transform: uppercase;margin-top: 15px;}
+.contact-adress_location {font: 22px "PlumbMedium";}
+.contacts-map {height: 480px;}
+
+/*Departments*/
+.contact-restrictor__departments {padding-top: 20px;}
+.contact-center {padding:35px 0 43px;border-bottom: 1px solid $greyLine_color;}
+.contact-center_title {font: 22px "PlumbMedium";margin-bottom:17px}
+.contact-support_item,
+.contact-divisions_item {display: inline-block;vertical-align: top;width:percentage(580px/$full_width);
+	&:nth-child(2n+1) {margin-right: percentage(20px/$full_width);}
+}
+.contact-worktime_title,
+.contact-divisions_chief {font-family: "PlumbMedium";}
+.contact-divisions {padding-bottom:199px;position: relative;
+	&:after {content:"";position: absolute;height: 1px;bottom: 199px;background: #fff;width: 100%;left: 0;}
+}
+.contact-divisions_title {font: 22px "PlumbMedium";margin-bottom:17px;}
+.contact-divisions_item {padding:39px 0 48px; border-bottom: 1px solid $greyLine_color;
+	&:last-child {border:none;}
+} 
+@media only screen and(max-width:$desktop_width){
+	.contact-support_item,
+	.contact-divisions_item {width: 100%;
+	&:nth-child(2n+1) {margin-right: 0;}
+	}
+}

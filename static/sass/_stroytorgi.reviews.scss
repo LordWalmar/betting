@@ -1,0 +1,41 @@
+.reviews-title {@extend .about-intro;padding-top:72px;padding-bottom:4px;}
+.reviews-list {@extend .about-intro_list;border-bottom:1px solid $greyBorder_color;padding-bottom:10px;margin-bottom:22px;}
+.reviews-list__intro {border-bottom:5px solid $greyBorder_color;padding-bottom:22px;margin-bottom:0;}
+.reviews-list_client {color:$gold_color;font-size:14px;margin-top:2px;}
+.reviews-list_date {text-transform:uppercase;}
+.reviews-list_col {@extend .about-intro_col; vertical-align: middle;
+	&:first-child {text-align:center;}
+	&:last-child {margin-left:0;}}
+.reviews-list_slogan {@extend .about-intro_slogan;position:relative;top:-78px;left:-38px;text-align:left;}
+.reviews-list_thesis {@extend .about-intro_thesis;font-size:initial;
+	&:before {display:none;}}
+.reviews_client-logo {-webkit-filter: grayscale(100%) opacity(70%);-moz-filter: grayscale(100%) opacity(70%);-ms-filter: grayscale(100%) opacity(70%);-o-filter: grayscale(100%) opacity(70%);filter: grayscale(100%) opacity(70%); filer:grey opacity(70%);/* Firefox 4+ */height:178px;max-width: 100%;	
+	&:hover {filter:none;}}
+
+.reviews_review-title {@extend .home-events_title;}
+.reviews_review-title__wide {@extend .reviews_review-title; padding-top: 15px;margin-bottom: 10px;max-width: 100%;border-top: 1px solid $greyLine_color;}
+.reviews_review-text {margin-bottom:15px;margin-top:32px;}
+.reviews_readmore {margin-top:10px;}
+.reviews_single-review:last-child .reviews-list {border-bottom:none;margin-bottom:0;padding-bottom:168px;}
+.rewiews_license {width: 633px !important;max-width: 90%;top: 0 !important;position: absolute !important;
+	.fancybox-inner {max-width: 100% !important;}}
+
+
+/* Reviews Inside*/
+.modal_reviews-letter {overflow:auto;padding-bottom:300px;}
+.reviews-inside_letter-wrapper {max-width:630px;margin:60px auto 0;}
+.reviews-inside_letter {display:none;width:100%;}
+
+/* FancyBox wrapper*/
+.reviews-fancybox_wrapper {position: absolute !important;}
+
+
+@media only screen and(max-width:800px){
+	.reviews-list_col {display:block;max-width:100%;margin-right:0;width:100%;}
+	.reviews-list_col:last-child {margin-left:-11px;}
+	.reviews-list_col:first-child {text-align:left;margin-bottom:20px;padding-top: 20px;margin-left: 0;padding-left: 0;}
+	.reviews-list_slogan {position: static;}
+	.reviews_logo {position:static;}
+	.reviews_single-review:last-child .reviews-list {padding-bottom:20px;}}
+@media only screen and(max-width:400px){
+	.reviews_logo {max-width:100%;}}

@@ -1,0 +1,33 @@
+.clients-filter > .l-restrictor {border-bottom:1px solid #d8dee3;box-shadow:0 3px 0px rgba(225, 225, 225, 0.2);position:relative;z-index:1;}
+.clients {padding-bottom: 106px;}
+.clients_title {font: 36px "PlumbLight";padding-top: 32px;text-transform: uppercase;color:$red_color;padding-bottom: 5px;border-bottom: 5px solid $greyLine_color;}
+.clients-kind_item {display: inline-block;vertical-align: top;width: percentage(380px/$full_width);margin-right:percentage(20px/$full_width);
+	&:last-child {margin-right:0;}}
+.clients-kind {padding: 17px 0 14px;}
+.clients-list_item {text-overflow: ellipsis;overflow: hidden;
+	a {text-decoration:none; color: $textBlack_color;}
+}
+.clients-section {
+	.switch {width: $width_col_4;margin-right: $module_gap;min-width: 320px;}
+	.switch_item { width: 34%;
+		&:first-child {width: 36.4%;}
+		&:last-child {width: 29.6%;}
+	}
+	.feedback-participate {padding-bottom: 100px;}
+}
+
+@media only screen and(max-width:$desktop_width){
+	.clients-kind_item {width: 48%;}
+	.clients-section {
+		.filter-companies {width: 100%; margin-right: 0;min-width: initial;}
+	}
+}
+
+@media only screen and(max-width:$mobile_width){
+	.clients-kind_item {width:100%;}
+}
+
+@media only screen and(max-width:365px){
+	.filter-companies_link__hidden {display: none;}
+	.switch_element {font-size:13px}
+}

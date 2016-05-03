@@ -1,0 +1,28 @@
+.signin-menu_item {display: inline-block;vertical-align: top;width: 50%;text-align: center;box-sizing: border-box;padding: 20px 10px;border-bottom: 1px solid $greyBorder_color;background:#f2f4f5;cursor: pointer;}
+.signin-menu_item__login {border-right:1px solid $greyBorder_color;border-radius: 3px 0 0 0;}
+.signin-menu_item__electro {border-radius: 0 3px 0 0;}
+.signin-menu_item__active {border-bottom:none;background: #fff;padding-bottom: 21px;position: relative;
+	&.signin-menu_item__login {
+		&:after {content:""; position: absolute;top: 0; right: -2px;height: 98%;border-right: 1px solid #fff; }
+	}
+}
+.signin-container {padding: 20px 20px 10px;font-size: 14px;}
+.signin-tab_login {padding-top: 20px;}
+.signin_registration {margin-top: 90px;text-align: center;
+	a {text-transform: uppercase;color: $gold_color;font: 14px "PlumbMedium";}
+}
+.signin_forgotLogin {color: $lightGrey_color;float: right;}
+.signin-tab {display: none;}
+.signin-tab__active {display: block;}
+.signin-tab_electro{
+	.signin-tab_information {margin-top:24px;margin-bottom:36px;}
+}
+.signin-tab_nopassword {
+	.signin-tab_information {margin-top: 20px;margin-bottom: 30px;}
+}
+.signin_title {font: 22px "PlumbMedium"; color: $headerBlack_color;}
+.signin-password {position: relative;}
+.signin-password_visible {position: absolute;top: 10px; right: 10px;background:url("../img/icon-eye.png.svg") no-repeat center center;width: 30px;height: 18px;
+	&:hover {background-image:url("../img/icon-eye_hover.png.svg");}
+ }
+.signin-password_visible__active {background-image:url("../img/icon-eye_active.png.svg") !important;}

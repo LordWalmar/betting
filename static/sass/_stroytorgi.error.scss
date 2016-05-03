@@ -1,0 +1,25 @@
+.l-restrictor__error {padding-bottom:183px;}
+.error-title {border-bottom:5px solid $greyBorder_color;color:#BF1D43;font-family:PlumbLight;font-size:36px;font-weight:normal;text-transform:uppercase;padding-top:53px;margin-left:1px;}
+.error-list {padding:10px 20px;}
+.error-col {display:inline-block;margin-right:$module_gap;max-width:$width_col_6;vertical-align:top;width:$width_col_6;
+	&:last-child {margin-right:0;}}
+.error-code {color:$headerBlack_color;font-size:236px;font-weight:bold;font-family:PlumbMedium;letter-spacing:10px;line-height:300px;margin-left:83px;margin-top:37px;}
+.error-feedback {margin-top:91px;margin-left:3px;max-width:73%;margin-bottom:90px;width:73%;}
+.error-tip {margin-top:91px;margin-left:2px;max-width:73%;margin-bottom:38px;width:73%;}
+.error-tip_link {display:block;max-width:150px;
+	&:first-child {max-width:47px;}}
+.error-homelink {font-size:14px;}
+
+
+
+@media only screen and(max-width:1150px){
+	.error-code {margin-left:0;}
+	.error-feedback,
+	.error-tip {max-width:100%;width:100%;}}
+@media only screen and(max-width:940px){
+	.l-restrictor__error {padding-bottom:90px;}
+	.error-col {display:block;margin-right:0;max-width:100%;width:100%;}
+	.error-feedback,
+	.error-tip {margin-top:initial;margin-bottom:20px;}}
+@media only screen and(max-width:470px){
+	.error-code {font-size:140px;margin:0;}}

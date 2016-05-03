@@ -1,0 +1,29 @@
+.axis path,
+.axis line {fill: none;	stroke: #7e8793; stroke-width: 1; shape-rendering: crispEdges;}
+
+.chart-canvas__bar {
+	.axis path,
+	.axis line {display: none;}
+}
+.svg-grid .tick {stroke: #dce7ea;shape-rendering: crispEdges;
+}
+
+
+.svg-grid path {stroke-width: 0;stroke: grey;}
+.svg-grid line{stroke: #dce7ea;shape-rendering: crispEdges;stroke-width: 1;}
+
+.svg-grid.x-grid {
+	.tick:first-child {
+		line {stroke: grey;}
+	}
+}
+.svg-chart_statictics, .svg-chart_dynamics {vertical-align:top;}
+
+.y {
+	.tick line {display: none;} 
+	path {display: none;}
+}
+
+
+
+

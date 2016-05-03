@@ -1,0 +1,16 @@
+.wbt-slider{height: 560px;background-repeat: no-repeat;background-position: center 0px;}
+.wbt-slider_wrap {display:inline-block;position:relative;overflow:hidden;max-width:100%;vertical-align: top;color: #fff;}
+.wbt-slider_list {margin:0;padding:0;position:relative;width:20000px;}
+.wbt-slider_list li {display:inline-block;vertical-align:top;margin:0;padding:0;}
+.wbt-slider_list li img {display:block;max-width:100%;width:100%;height:auto;z-index:-1;}
+.wbt-slider_list div {display:block;padding-left:54px;}
+.wbt-slider_list p {margin:20px 0;}
+.wbt-slider_dots {overflow:hidden;font-size:12px; position: absolute;bottom: 12px; z-index: 2;width: 100%;}
+.wbt-slider_dots li {display:inline-block; vertical-align:top;margin-right: 0.5%;width: 15%;max-width: 73px;}
+.wbt-slidet_number {font:16px "PlumbMedium",suns-serif;margin-bottom: 6px;}
+.wbt-slider_background-line {background-color:#BB0D36;}
+.wbt-slider_dots li:hover {cursor: pointer;}
+.wbt-slider_dots li a {display:block;text-align:center;width:0px;height:8px;background-color:rgba(255,255,255,.35);text-decoration:none;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;transition: none;}
+.wbt-slider_dots li a:hover {color:#999;}
+.wbt-slider_dots li.active a {color:#fff;background-color:#999;}
+.wbt-slider_dots__active {-webkit-transition:width 9000ms linear !important;-o-transition:width 9000ms linear !important;transition:width 9000ms linear !important;background-color: #EBB0BD !important;}

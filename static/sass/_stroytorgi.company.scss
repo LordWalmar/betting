@@ -1,0 +1,50 @@
+/*Constants*/
+$data_width: 780px;
+
+.company-section {
+	.adr {display: block;}
+	.fancybox-wrap {max-width: 1020px;}}
+.company-back {padding:41px 0 25px;}
+.company-title {font: 36px "PlumbLight";text-transform: uppercase;color: $red_color;padding-bottom: 5px;border-bottom: 1px solid $greyLine_color;}
+.company-logo {float: right;margin-top: -35px;max-width: 100%;max-height:75px;}
+.company-info {padding: 21px 0 180px;}
+.company-info_item,
+.company-data_cell {display:inline-block;font-family:"PlumbRegular";vertical-align:top;word-break:break-word;}
+.company-info_item__introducing{margin-bottom:20px;width:$width_col_4;margin-right:$module_gap;font-size: 14px;line-height: 20px;margin-top: 3px;}
+.company-info_item__data {width:$width_col_8;font-family:"PlumbMedium";}
+.company-read {margin-top: 20px;}
+.company-work {margin-bottom: 33px;}
+.company-work {margin-bottom: 22px;
+	&:first-child {margin-bottom: 31px;}}
+.company-work_action {display: inline-block;vertical-align: top;width: 100px;font-family:"PlumbMedium";color:$lightGrey_color;margin-right: -100px;}
+.company-work-category {display: inline-block;vertical-align: top;font:14px "PlumbRegular";width: 100%; padding-left: 100px;box-sizing:border-box;margin-top: 2px;}
+.company-work-category_item{display: inline-block;vertical-align: middle;}
+.company-data {border-top: 5px solid $greyLine_color;}
+.company-data_group {border-bottom: 1px solid #BECCD3;}
+.company-data_cell {width:percentage(380px/780px);padding:5px 0;line-height: 25px;
+		&:nth-child(2n+1) {margin-right:percentage(20px/780px);}}
+.company-data_cell__header {color:$lightGrey_color;}
+.company-modal_close {font-size:14px;color: #909aa5;border-bottom: 1px dashed #909aa5;padding: 0;line-height: 18px;text-decoration:none;
+	&:hover {border-color:$hoverRed_color;}}
+
+
+
+@media only screen and(max-width:$desktop_width){
+	.company-back {padding:25px 0;}
+	.company-info_item {width: 100%;margin-right: 0px;}
+	.company-logo {float: none;display: block;margin-top: 0;margin-bottom: 25px;}}
+
+/*Modal window*/
+
+.company-modal_block {background-color: #fff;display: block;padding: 20px 20px 60px;display: none;
+	li {text-transform: lowercase;
+		&:before {content:"-";margin-right: 5px;}}}
+.company-modal_text {width: percentage(680px/980px);
+	p {margin-top: 20px;}}
+.company-modal_img-wrapper {text-align:center;
+	img {border:1px solid $greyLine_color;margin-top:20px;}}
+
+
+
+@media only screen and(max-width:$desktop_width){
+	.company-modal_text {width: 100%;}}
